@@ -78,6 +78,7 @@ class ListSlicingTests(unittest.TestCase):
         notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
         list_operations.delete_middle(notes)
         self.assertEqual(notes, ['Do', 'Re', 'Ti', 'Do'])
+        
 
 
 if __name__ == "__main__":
