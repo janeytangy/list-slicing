@@ -101,7 +101,7 @@ def inner_four(input_list):
 
     """
 
-    return input_list[2:7]
+    return input_list[2:6]
 
 
 def inner_four_end(input_list):
@@ -117,7 +117,7 @@ def inner_four_end(input_list):
 
     """
 
-    return input_list[-6:-3]
+    return input_list[-6:-2]
 
 
 def replace_head(input_list):
@@ -193,7 +193,7 @@ def delete_third_and_seventh(input_list):
     ['Do', 'Re', 'Fa', 'So', 'La', 'Do']"""
 
     del input_list[2] 
-    del input_list[6] 
+    del input_list[5] 
 
     pass
 
