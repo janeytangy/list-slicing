@@ -15,10 +15,10 @@ def custom_len(input_list):
         8
 
     """
+    
+    return len(input_list)
 
-    return 0
-
-
+    
 # For the next four exercises, you'll need to be clever and think about ways
 # to use list slice assignment.
 #
@@ -44,6 +44,8 @@ def custom_append(input_list, value):
 
     """
 
+    input_list.append(value)
+
     pass
 
 
@@ -62,7 +64,7 @@ def custom_extend(input_list, second_list):
         True
 
     """
-
+    input_list.extend(second_list)
     pass
 
 
@@ -80,7 +82,7 @@ def custom_insert(input_list, index, value):
         True
 
     """
-
+    input_list.insert(index,value)
     pass
 
 
@@ -100,6 +102,7 @@ def custom_remove(input_list, value):
 
     """
 
+    input_list.remove(value)
     pass
 
 
@@ -119,7 +122,9 @@ def custom_pop(input_list):
 
     """
 
-    return None
+    input_list = input_list.pop()
+
+    return input_list
 
 
 def custom_index(input_list, value):
@@ -135,7 +140,8 @@ def custom_index(input_list, value):
 
     """
 
-    return 0
+    index = input_list.index(value)
+    return index
 
 
 def custom_count(input_list, value):
@@ -150,8 +156,8 @@ def custom_count(input_list, value):
         2
 
     """
-
-    return 0
+    count = input_list.count(value)
+    return count
 
 
 def custom_reverse(input_list):
@@ -169,7 +175,7 @@ def custom_reverse(input_list):
         True
 
     """
-
+    input_list.reverse()
     pass
 
 
@@ -190,7 +196,7 @@ def custom_contains(input_list, value):
 
     """
 
-    return None
+    return value in input_list
 
 
 def custom_equality(some_list, another_list):
@@ -209,4 +215,4 @@ def custom_equality(some_list, another_list):
 
     """
 
-    return None
+    return some_list == another_list
